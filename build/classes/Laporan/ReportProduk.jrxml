@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a240447a-d103-44c0-a5be-e980a4e186d6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tbl_produk]]>
+	</queryString>
+	<field name="ProdukID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NamaProduk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Harga" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="35" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="95" splitType="Stretch">
+			<staticText>
+				<reportElement x="168" y="10" width="301" height="38" uuid="b64db2f6-8a79-4076-8ec6-db80a429bccb"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PRODUK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="48" width="229" height="37" uuid="2cfab2ab-ea39-4740-84a6-ce8fe8558aa3"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[MINIMART]]></text>
+			</staticText>
+			<image>
+				<reportElement x="44" y="3" width="82" height="85" uuid="6b2f5aca-176c-4df0-a9ce-f2a7fc2e13a6"/>
+				<imageExpression><![CDATA["C:\\Users\\user\\Downloads\\1526884799020.jpg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="0" y="88" width="555" height="1" uuid="41b0577c-7b64-4438-9472-4518a2a9b833"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="469" y="0" width="86" height="20" backcolor="#FFFF00" uuid="eee5517c-bc89-441a-9315-897938ead25d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="468" y="0" width="87" height="20" uuid="e55abf10-3c42-4520-a888-5a1e07f26b30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="136" y="0" width="198" height="20" forecolor="#000000" backcolor="#FFFF00" uuid="f0dfc6bb-d5ac-4353-b7f7-3833271058bd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="136" y="0" width="199" height="20" uuid="512be7ed-0377-48d5-bef0-30b58c91aa7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Produk]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="0" width="136" height="20" forecolor="#000000" backcolor="#FFFF00" uuid="113c82f1-f50d-46b7-8b14-32cf7bfefd9b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="136" height="20" uuid="7488e28f-a7c2-439d-95fd-53cedcecba2f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Produk]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="333" y="0" width="135" height="20" backcolor="#FFFF00" uuid="41b30be6-5f8a-4fb7-bd90-d859abf62b59"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="334" y="0" width="135" height="20" backcolor="#FFFF00" uuid="88c05c0a-97f3-42d2-abfc-37f5e0726fe6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="469" y="0" width="86" height="20" uuid="72831b1d-df8d-4cc1-9f73-b9a43d0003bb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="0" width="134" height="20" uuid="865bbd45-0bc7-43ab-88eb-7d9a9b894a5f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="136" y="0" width="198" height="20" uuid="d1a1d1cb-b397-4232-ac8c-3ba3c448997a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="136" height="20" uuid="1d32a30a-8578-4a97-b0e0-3be94cb55d50"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="136" height="20" uuid="7d4c6c7b-3fdf-4abe-bad6-baec4e62b891"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ProdukID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="0" width="200" height="20" uuid="f59c874d-f9c1-430a-97b1-ae66473ce373"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NamaProduk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="0" width="134" height="20" uuid="c9ef0b4b-536c-488c-8f89-9d782757c661"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="0" width="87" height="20" uuid="bdffa5b3-17a0-4238-b148-019b75bcb6eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Stok}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="46" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
